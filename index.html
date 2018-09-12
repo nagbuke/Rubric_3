@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	
+<!--------------Style Sheet--------------->
+<link href="css/myStyle.css" type="text/css" rel="stylesheet">
+	
+<!--------------JavaScript--------------->	
+
+</head>
+
+<body>
+	<header>
+	  <h1 >Welcome to Rubric 3</h1>
+	  
+	  <h2 >Loops and Arrays</h2>
+	
+	</header>
+	
+	
+	<h3></h3>
+	
+	<p id="myP"></p>
+	<button onclick="myFunction()">Big Cats</button> <br/><br/>
+
+
+<!----<form name="selectForm">
+  <p>
+    <label for="travelPlaces"></label>
+    <select id="travelDestinations" name="travelDestinations" multiple="multiple">
+      <option selected="selected">Africa</option>
+      <option>Asia</option>
+      <option>Australia</option>
+      <option>Europe</option>
+      <option>North America</option>
+      <option>South America</option>
+	<option>Antartica</option>
+    </select>
+  </p>
+  <p><input id="btn" type="button" value="How many are selected?" /></p>
+</form>---->
+<script language="javascript">
+	var count;
+			prompt("How many pets do you have?");
+				if (count = 0) {
+					for(count = 0; count < 10; count++){
+               
+               document.write("<br />");
+            } 
+				
+				}
+					document.write("You have " + count + " pets!" + "<br />");
+         	prompt("how many of those pets are cats?");
+	
+  
+	document.write("Don't wait, adopt a cat today!");
+	var count = 1;
+	if (count > 0) {
+		
+			document.write("<br /><br />")
+            document.write("Do you want to adopt:" + "<br /> ");
+         
+            while (count < 10)
+            {
+               count = count + 1;
+               
+               if (count == 5){
+                  continue; 
+               }
+               document.write( count + " more cats" + "<br />");
+            }
+		document.write("<br/>So many cats!<br/> ");
+
+	}
+	var cats, pets, text, myCat, i;
+	
+	function myFunction() {
+    cats.unshift(" Tiger", " Lion", " Cheetah");
+    document.getElementById("myP").innerHTML = cats;
+}
+	
+	
+	cats = [" Tabby", " Siamese", " Pixiebob", " Abyssinian"];
+	text = "<ul>";
+	
+	myCat = cats.length;
+	
+		for (i = 0; i < myCat; i++) {
+    	text += "<li>" + cats[i] + "</li>";
+}
+	text += "</ul>";
+	document.getElementById("myP").innerHTML = text;
+	
+    
+            
+         //-->
+</script>
+
+</body>
+</html>
